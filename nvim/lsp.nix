@@ -1,10 +1,14 @@
 _:
 {
+  config.vim.lsp.enable = true;
+  config.vim.treesitter = {
+    enable = true;
+    indent.enable = true;
+  };
+
   ############################
   # Language Server Protocol #
   ############################
-  config.vim.lsp.enable = true;
-  config.vim.treesitter.enable = true;
   config.vim.languages = {
     enableTreesitter = true;
     enableExtraDiagnostics = true;
