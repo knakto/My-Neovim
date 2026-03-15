@@ -30,6 +30,8 @@
     devShells.${system}.default = pkgs.mkShell {
       packages = [
         myNeovim
+        pkgs.tree-sitter
+        pkgs.wl-clipboard
       ];
     };
 
