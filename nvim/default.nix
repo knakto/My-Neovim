@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
-  config.vim = {
-    theme.enable = true;
-  };
+  imports = [
+    ./theme.nix
+    ./lsp.nix
+    ./plugins.nix
+  ];
 }
