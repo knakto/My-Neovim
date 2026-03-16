@@ -5,6 +5,7 @@ _: {
     ./filetree.nix
     ./telescope.nix
     ./toggleterm.nix
+    ./lualine.nix
     ./ui.nix
   ];
 
