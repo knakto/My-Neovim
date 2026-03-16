@@ -6,7 +6,6 @@ _: {
       colorizer.enable = true;
       fastaction.enable = true;
       illuminate.enable = true;
-      modes-nvim.enable = true;
       borders = {
         enable = true;
         plugins = {
