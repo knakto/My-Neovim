@@ -3,6 +3,7 @@ _: {
     ./lsp.nix
     ./plugins.nix
     ./filetree.nix
+    ./telescope.nix
   ];
 
   vim = {
