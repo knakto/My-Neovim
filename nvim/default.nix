@@ -4,6 +4,7 @@ _: {
     ./plugins.nix
     ./filetree.nix
     ./telescope.nix
+    ./toggleterm.nix
   ];
 
   vim = {
