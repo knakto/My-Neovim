@@ -9,6 +9,8 @@ _: {
   ];
 
   vim = {
+    viAlias = true;
+    vimAlias = true;
 
     theme = {
       enable = true;
@@ -49,6 +51,11 @@ _: {
       softtabstop = 2;
       expandtab = true;
       smartindent = true;
+    };
+
+    binds = {
+      cheatsheet.enable = true;
+      whichKey.enable = true;
     };
 
   };
