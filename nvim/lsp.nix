@@ -4,6 +4,7 @@ _:
   config.vim.treesitter = {
     enable = true;
     indent.enable = true;
+    fold = true;
   };
 
   ############################
