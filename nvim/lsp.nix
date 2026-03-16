@@ -12,7 +12,7 @@ _:
   ############################
   config.vim.languages = {
     enableTreesitter = true;
-    # enableExtraDiagnostics = true;
+    enableExtraDiagnostics = false;
     enableDAP = true;
 
     #---- Enable Language ----#
