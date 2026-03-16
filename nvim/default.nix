@@ -1,9 +1,8 @@
-_:
-{
+_: {
   imports = [
     ./lsp.nix
     ./plugins.nix
-    ./keybinds.nix
+    ./filetree.nix
   ];
 
   vim = {
@@ -22,11 +21,25 @@ _:
       };
     };
 
+    ############################
+    #        Clipboard         #
+    ############################
     clipboard = {
       enable = true;
       providers.wl-copy.enable = true;
     };
+    keymaps = [
+      {
+        key = "<C-c>";
+        mode = "v";
+        action = "\"+y";
+        desc = "Clipboard to system";
+      }
+    ];
 
+    ############################
+    #          Indent          #
+    ############################
     options = {
       tabstop = 2;
       shiftwidth = 2;
