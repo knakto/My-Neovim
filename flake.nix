@@ -30,8 +30,10 @@
     devShells.${system}.default = pkgs.mkShell {
       packages = [
         myNeovim
+        pkgs.nodejs_20
         pkgs.tree-sitter
         pkgs.wl-clipboard
+        pkgs.prisma-language-server
       ];
     };
 
