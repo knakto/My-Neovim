@@ -16,7 +16,7 @@
   vim.keymaps = [
   {
     mode = "t";
-    key = "<Esc>";
+    key = "<C-]>";
     action = "<C-\\><C-n>";
   }
 ];
