@@ -22,8 +22,8 @@ _: {
     diagnostics = {
       enable = true;
       config = {
-        virtual_lines = true;
-        # virtual_text = true; # for show after line
+        # virtual_lines = true;
+        virtual_text = true; # for show after line
       };
     };
 
