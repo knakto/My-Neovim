@@ -60,6 +60,8 @@ _: {
       html.lsp.enable = true;
       ts.enable = true;
       ts.lsp.enable = true;
+      tailwind.enable = true;
+      tailwind.lsp.enable = true;
     };
 
     ############################
