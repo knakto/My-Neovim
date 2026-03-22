@@ -30,6 +30,7 @@
     devShells.${system}.default = pkgs.mkShell {
       packages = [
         myNeovim
+        pkgs.tmux
         pkgs.nodejs_20
         pkgs.tree-sitter
         pkgs.wl-clipboard
