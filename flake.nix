@@ -18,14 +18,28 @@
         inherit pkgs;
 
         modules = [
-          ./nvim
+            ./nvim
+            {
+              vim.extraPackages = with pkgs; [
+                fd
+                gcc
+                git
+                ripgrep
+                nodejs_20
+                tree-sitter
+                wl-clipboard
+              ];
+            }
         ];
 
       }).neovim;
 
   in {
 
-    packages.${system}.my-neovim = myNeovim;
+    packages.${system} = {
+      default = myNeovim;
+      my-neovim = myNeovim;
+    };
 
     devShells.${system}.default = pkgs.mkShell {
       packages = [

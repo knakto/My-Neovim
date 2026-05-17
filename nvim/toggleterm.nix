@@ -7,7 +7,8 @@ in
     enable = true;
     mappings.open = "<C-\\>";
     setupOpts = {
-      shell = "${pkgs.tmux}/bin/tmux -f '${tmuxConfigFile}' new-session -A -s nvf";
+      # shell = "${pkgs.tmux}/bin/tmux -f '${tmuxConfigFile}' new-session -A -s nvf";
+      shell = "${pkgs.zsh}/bin/zsh";
       direction = "horizontal";
       enable_winbar = true;
     };
