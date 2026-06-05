@@ -6,6 +6,8 @@ _: {
     ############################
     lsp = {
       enable = true;
+      inlayHints.enable = true;
+      nvim-docs-view.enable = true;
       servers = {
         prisma = {
           enable = true;
