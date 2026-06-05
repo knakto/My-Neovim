@@ -18,5 +18,14 @@
     startPlugins = with pkgs.vimPlugins; [
       emmet-vim
     ];
+    extraPlugins = with pkgs.vimPlugins; {
+      lsp_signature-nvim = {
+        package = lsp_signature-nvim;
+        setup = ''
+          local cfg = {}
+          require "lsp_signature".setup(cfg)
+        '';
+      };
+    };
   };
 }
