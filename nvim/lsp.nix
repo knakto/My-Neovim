@@ -64,6 +64,10 @@ _: {
       ts.lsp.enable = true;
       tailwind.enable = true;
       tailwind.lsp.enable = true;
+      markdown = {
+        enable = true;
+        extensions.render-markdown-nvim.enable = true;
+      };
     };
 
     ############################
